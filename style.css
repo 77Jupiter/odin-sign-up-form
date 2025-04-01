@@ -5,20 +5,30 @@
   font-size: normal;
 }
 
+body {
+  background-color: rgb(14, 14, 14);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+main {
+  display: flex;
+}
+
+/*
+  LEFT SECTION
+*/
+
 #logo {
   color: white;
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
   font-size: 4rem;
-}
-
-body {
-  background-color: rgb(14, 14, 14);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main_left-section {
@@ -45,7 +55,7 @@ body {
 }
 
 .logo-image {
-  width: 100px;
+  width: 80px;
 }
 
 .main_left-section-footer {
@@ -58,4 +68,108 @@ body {
 
 .underline {
   text-decoration: underline;
+}
+
+/*
+  RIGHT SECTION
+*/
+
+.main_right-section {
+  width: 800px;
+  background-color: rgb(248, 248, 248);
+}
+
+.right-section-top,
+.right-section-bottom {
+  padding: 0 2.5rem;
+}
+
+.right-section-top {
+  padding-top: 150px;
+}
+
+.message-container {
+  font-weight: 700;
+  font-size: 1.35rem;
+  width: 630px;
+}
+
+.new-line {
+  display: block;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.message-container p {
+  margin-bottom: 1.5rem;
+}
+
+.right-section-middle {
+  margin-top: 4rem;
+}
+
+.form-background {
+  padding: 1rem 0 1rem 2.5rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.form-input-container {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: rgb(44, 44, 44);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 5px 0 5px 10px;
+  width: 220px;
+  outline: none;
+}
+
+input:focus {
+  border-color: blue;
+}
+
+.create-account-btn {
+  font-weight: 500;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border: none;
+  padding: 13px 50px;
+  border-radius: 6px;
+  background-color: #596d48;
+  color: white;
+  margin: 2rem 0 2.25rem 2.5rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.log-in-link {
+  color: #596d48;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.password-input:invalid {
+  border-color: red;
 }
